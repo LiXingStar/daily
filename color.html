@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>丢人</title>
+</head>
+<body>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<div class="box"></div>
+<script>
+    let box = document.querySelector('.box');
+    setInterval(()=>{
+        box.style.background = yanse();
+    },1000)
+    function yanse(){
+        let r = Math.floor(Math.random()*256);
+        let g = Math.floor(Math.random()*256);
+        let b = Math.floor(Math.random()*256);
+        let rgb = "rgb("+r+","+g+","+b+")";
+        return rgb;
+    }
+</script>
+</body>
+</html>
